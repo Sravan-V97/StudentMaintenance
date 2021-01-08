@@ -37,7 +37,7 @@ function Students() {
       }
     }
   }, []);
-  // create new course
+ 
 
   // map students dropdown values with course details
 
@@ -56,6 +56,7 @@ function Students() {
     }
   }, [selectedCourse]);
 
+   // create new course
   const addCourse = () => {
     if (inputText) {
       let _tempCourses = [...courses];
@@ -68,6 +69,8 @@ function Students() {
       alert("Course name cannot be empty");
     }
   };
+
+   // create new student
   const addStudent = () => {
     if (inputTextStudent) {
       let _tempStudents = [...students];
@@ -88,6 +91,8 @@ function Students() {
       alert("Student name cannot be empty");
     }
   };
+
+  //clear all state variables
   const cancel = () => {
     setInputShow(false);
     setInputText("");
